@@ -1,0 +1,24 @@
+.jumbotron {
+  background: #552210;
+  color: white;
+}
+
+.jumbotron h1 {
+  font-size: 64px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+.card-header {
+  background: blue;
+  color: white;
+  font-weight: bold;
+}
+
+button {
+  background: blue;
+  color: white;
+  font-weight: 800;
+}

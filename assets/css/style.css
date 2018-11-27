@@ -1,10 +1,11 @@
 .jumbotron {
-  background: #552210;
+  background: #223377;
   color: white;
 }
 
 .jumbotron h1 {
   font-size: 64px;
+  padding-bottom: 15px;
 }
 
 h3 {
@@ -12,13 +13,13 @@ h3 {
 }
 
 .card-header {
-  background: blue;
+  background: #223377;
   color: white;
   font-weight: bold;
 }
 
 button {
-  background: blue;
+  background: #223377;
   color: white;
   font-weight: 800;
 }

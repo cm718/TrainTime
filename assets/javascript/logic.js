@@ -42,10 +42,10 @@ $(document).ready(function() {
     console.log(trainData.freq);
 
     // Clears all of the text boxes
-    $("#trainName").val("");
-    $("#destination").val("");
-    $("#firstTrainTime").val("");
-    $("#frequency").val("");
+    $("#trainName").val("").trim();
+    $("#destination").val("").trim();
+    $("#firstTrainTime").val("").trim();
+    $("#frequency").val("").trim();
   });
 
   // Create Firebase event for adding train time to the database
@@ -56,9 +56,9 @@ $(document).ready(function() {
     // Store everything into a variable
     var trainName = snapshot.val().name;
     var destination = snapshot.val().dest;
-    var firstTrainTime = snapshot.val().time;
+    var firstTrainTime = time;
     var frequency = snapshot.val().freq;
-    var nextArrival = moment().format("HH:mm");
+    var nextArrival = moment(traintime).fromNow("HH:mm");
     var minutesAway = moment().format("HH:mm");
 
     // Log the train information
